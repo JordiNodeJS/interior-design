@@ -1,33 +1,25 @@
-/******* Bootstrap Theming ********/
+/******* Custom CSS - iDESIGN Interior Design ********/
 
-$primary: #DFB163;
-$secondary: #252531;
-$light: #F3F6FF;
-$dark: #181818;
-
-$theme-colors: (
-    "primary": $primary,
-    "secondary": $secondary,
-    "light": $light,
-    "dark": $dark,
-);
-
-$font-family-sans-serif: 'Montserrat', sans-serif;
-
-$headings-font-family: 'Oswald', sans-serif;
-
-$body-color: #777777;
-
-$headings-color: $secondary;
-
-$enable-responsive-font-sizes: true;
-
-$enable-rounded: false;
+/* Bootstrap CSS is imported before this file in layout.tsx */
+/* These are the custom overrides for the template */
 
 @use "./styles/flaticon.scss";
 
+/* Color Variables matching original template */
+:root {
+    --primary: #DFB163;
+    --secondary: #252531;
+    --light: #F3F6FF;
+    --dark: #181818;
+    --body-color: #777777;
+}
 
-/********** Custom CSS ************/
+/* Global body styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #777777;
+}
+
 h1,
 h2 {
     font-weight: 600 !important;
@@ -55,7 +47,7 @@ h6 {
     left: 0;
     width: 45px;
     height: 3px;
-    background: $primary;
+    background: #DFB163;
 }
 
 [class^=flaticon-]:before,
@@ -103,7 +95,7 @@ h6 {
     height: 50%;
     top: 0;
     left: 0;
-    background: $dark;
+    background: #181818;
 }
 
 .nav-bar::after {
@@ -119,13 +111,13 @@ h6 {
 .navbar-dark .navbar-nav .nav-link {
     padding: 30px 15px;
     letter-spacing: 1px;
-    color: $light;
+    color: #F3F6FF;
     outline: none;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: $primary;
+    color: #DFB163;
 }
 
 @media (max-width: 991.98px) {
@@ -167,8 +159,8 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $secondary;
-    background: $primary;
+    color: #252531;
+    background: #DFB163;
     font-size: 22px;
     opacity: .1;
     transition: .3s;
@@ -239,17 +231,17 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $primary;
+    color: #DFB163;
     background: transparent;
-    border: 1px solid $primary;
+    border: 1px solid #DFB163;
     font-size: 22px;
     transition: .3s;
 }
 
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
-    color: $secondary;
-    background: $primary;
+    color: #252531;
+    background: #DFB163;
 }
 
 .contact-form .help-block ul {
@@ -264,7 +256,7 @@ h6 {
 }
 
 .bg-secondary {
-    background-color: #EDBB5F !important;
+    background-color: #252531 !important;
 }
 
 .text-primary {
@@ -275,17 +267,78 @@ h6 {
     color: #252531 !important;
 }
 
+/* Button Primary - Match original template exactly */
 .btn-primary {
     background-color: #DFB163 !important;
     border-color: #DFB163 !important;
-    color: #FFFFFF !important;
+    color: #212529 !important; /* Dark text like original */
 }
 
 .btn-primary:hover {
-    background-color: #c89a4f !important;
-    border-color: #c89a4f !important;
+    background-color: #d8a143 !important;
+    border-color: #d69c39 !important;
+    color: #212529 !important;
 }
 
+.btn-primary:focus,
+.btn-primary.focus {
+    background-color: #d8a143 !important;
+    border-color: #d69c39 !important;
+    color: #212529 !important;
+    box-shadow: 0 0 0 0.2rem rgba(195, 156, 90, 0.5) !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active {
+    background-color: #d69c39 !important;
+    border-color: #d4972e !important;
+    color: #212529 !important;
+}
+
+/* Button Outline Primary - Match original template exactly */
+.btn-outline-primary {
+    color: #DFB163 !important;
+    border-color: #DFB163 !important;
+    background-color: transparent !important;
+}
+
+.btn-outline-primary:hover {
+    color: #212529 !important;
+    background-color: #DFB163 !important;
+    border-color: #DFB163 !important;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(223, 177, 99, 0.5) !important;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active {
+    color: #212529 !important;
+    background-color: #DFB163 !important;
+    border-color: #DFB163 !important;
+}
+
+/* Button Outline Light - Match original template exactly */
+.btn-outline-light {
+    color: #F3F6FF !important;
+    border-color: #F3F6FF !important;
+    background-color: transparent !important;
+}
+
+.btn-outline-light:hover {
+    color: #212529 !important;
+    background-color: #F3F6FF !important;
+    border-color: #F3F6FF !important;
+}
+
+.btn-outline-light:focus,
+.btn-outline-light.focus {
+    box-shadow: 0 0 0 0.2rem rgba(243, 246, 255, 0.5) !important;
+}
+
+/* Button Secondary - Match original template exactly */
 .btn-secondary {
     background-color: #252531 !important;
     border-color: #252531 !important;
@@ -293,6 +346,31 @@ h6 {
 }
 
 .btn-secondary:hover {
-    background-color: #3a3a4a !important;
-    border-color: #3a3a4a !important;
+    background-color: #15151b !important;
+    border-color: #0f0f14 !important;
+    color: #FFFFFF !important;
+}
+
+.btn-secondary:focus,
+.btn-secondary.focus {
+    background-color: #15151b !important;
+    border-color: #0f0f14 !important;
+    box-shadow: 0 0 0 0.2rem rgba(70, 70, 80, 0.5) !important;
+}
+
+/* Links styling - Match original */
+a {
+    color: #DFB163;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #cc902a;
+    text-decoration: underline;
+}
+
+/* Headers color correction */
+h5 {
+    color: #252531 !important;
 }
