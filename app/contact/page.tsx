@@ -104,7 +104,7 @@ export default function ContactPage() {
                   <div className="d-flex flex-column">
                     <h4>Our Office</h4>
                     <p className="m-0 text-white">
-                      456 Interior Design Ave, New York, NY 10001
+                      Carrer de Provença 385, Barcelona 08025
                     </p>
                   </div>
                 </div>

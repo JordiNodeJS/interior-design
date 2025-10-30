@@ -8,7 +8,7 @@ export default function UnderNav() {
               <h1 className="flaticon-office font-weight-normal text-primary m-0 mr-3"></h1>
               <div className="d-flex flex-column">
                 <h5>Our Office</h5>
-                <p className="m-0">456 Interior Design Ave, NY 10001</p>
+                <p className="m-0">Carrer de Provença 385, Barcelona 08025</p>
               </div>
             </div>
           </div>
