@@ -1,10 +1,18 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (path: string) => {
+    if (path === "/" && pathname === "/") return true;
+    if (path !== "/" && pathname.startsWith(path)) return true;
+    return false;
+  };
 
   return (
     <div className="container-fluid position-relative nav-bar p-0">
@@ -29,16 +37,34 @@ export default function Navbar() {
             id="navbarCollapse"
           >
             <div className="navbar-nav ml-auto py-0">
-              <Link href="/" className="nav-item nav-link active">
+              <Link
+                href="/"
+                className={`nav-item nav-link ${isActive("/") ? "active" : ""}`}
+              >
                 Home
               </Link>
-              <Link href="/about" className="nav-item nav-link">
+              <Link
+                href="/about"
+                className={`nav-item nav-link ${
+                  isActive("/about") ? "active" : ""
+                }`}
+              >
                 About
               </Link>
-              <Link href="/service" className="nav-item nav-link">
+              <Link
+                href="/service"
+                className={`nav-item nav-link ${
+                  isActive("/service") ? "active" : ""
+                }`}
+              >
                 Service
               </Link>
-              <Link href="/project" className="nav-item nav-link">
+              <Link
+                href="/project"
+                className={`nav-item nav-link ${
+                  isActive("/project") ? "active" : ""
+                }`}
+              >
                 Project
               </Link>
               <div className="nav-item dropdown">
@@ -58,7 +84,12 @@ export default function Navbar() {
                   </Link>
                 </div>
               </div>
-              <Link href="/contact" className="nav-item nav-link">
+              <Link
+                href="/contact"
+                className={`nav-item nav-link ${
+                  isActive("/contact") ? "active" : ""
+                }`}
+              >
                 Contact
               </Link>
             </div>
