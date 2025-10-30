@@ -9631,6 +9631,16 @@ h6 {
   content: none; /* Remove default Swiper arrows */
 }
 
+/* Hide Swiper SVG icons */
+.service-carousel .swiper-button-prev svg,
+.service-carousel .swiper-button-next svg,
+.team-carousel .swiper-button-prev svg,
+.team-carousel .swiper-button-next svg,
+.service-carousel .swiper-navigation-icon,
+.team-carousel .swiper-navigation-icon {
+  display: none;
+}
+
 /* Style Font Awesome icons inside navigation buttons */
 .service-carousel .swiper-button-prev i,
 .service-carousel .swiper-button-next i,
@@ -9752,6 +9762,13 @@ h6 {
 .testimonial-carousel .swiper-button-prev::after,
 .testimonial-carousel .swiper-button-next::after {
   content: none; /* Remove default Swiper arrows */
+}
+
+/* Hide Swiper SVG icons */
+.testimonial-carousel .swiper-button-prev svg,
+.testimonial-carousel .swiper-button-next svg,
+.testimonial-carousel .swiper-navigation-icon {
+  display: none;
 }
 
 /* Style Font Awesome icons inside navigation buttons */

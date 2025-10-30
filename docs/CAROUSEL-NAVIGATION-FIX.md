@@ -109,6 +109,16 @@ Los carruseles de Team y Services en la aplicación Next.js utilizaban los icono
   content: none; /* Elimina las flechas predeterminadas de Swiper */
 }
 
+/* Ocultar SVG de Swiper */
+.service-carousel .swiper-button-prev svg,
+.service-carousel .swiper-button-next svg,
+.team-carousel .swiper-button-prev svg,
+.team-carousel .swiper-button-next svg,
+.service-carousel .swiper-navigation-icon,
+.team-carousel .swiper-navigation-icon {
+  display: none;
+}
+
 /* Estilizar iconos de Font Awesome dentro de los botones de navegación */
 .service-carousel .swiper-button-prev i,
 .service-carousel .swiper-button-next i,
@@ -125,6 +135,13 @@ Los carruseles de Team y Services en la aplicación Next.js utilizaban los icono
 .testimonial-carousel .swiper-button-prev::after,
 .testimonial-carousel .swiper-button-next::after {
   content: none; /* Elimina las flechas predeterminadas de Swiper */
+}
+
+/* Ocultar SVG de Swiper */
+.testimonial-carousel .swiper-button-prev svg,
+.testimonial-carousel .swiper-button-next svg,
+.testimonial-carousel .swiper-navigation-icon {
+  display: none;
 }
 
 /* Estilizar iconos de Font Awesome dentro de los botones de navegación */
