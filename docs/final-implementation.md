@@ -61,8 +61,8 @@ All placeholder text replaced with professional, contextually relevant content:
 
 #### Contact Information
 - **Address**: 456 Interior Design Ave, New York, NY 10001
-- **Email**: hello@idesign.studio
-- **Phone**: +1 (212) 555-0123
+- **Email**: info@webcode.es
+- **Phone**: +34 912 345 678
 - **Brand**: iDESIGN Interior Studio
 - **Copyright**: © 2025 iDESIGN Interior Studio. All Rights Reserved. Crafted with excellence.
 
@@ -187,8 +187,8 @@ Route (app)
 | Team Members | "Name Goes Here" | Real names with roles |
 | Testimonials | Lorem ipsum | Authentic luxury client reviews |
 | Blog Posts | "Diam amet eos" | Real interior design topics |
-| Contact Email | info@example.com | hello@idesign.studio |
-| Contact Phone | +012 345 67890 | +1 (212) 555-0123 |
+| Contact Email | info@example.com | info@webcode.es |
+| Contact Phone | +012 345 67890 | +34 912 345 678 |
 | Brand Name | "Your Site Name" | "iDESIGN Interior Studio" |
 | Footer Copyright | Generic | "© 2025 iDESIGN Interior Studio. Crafted with excellence." |
 

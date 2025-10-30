@@ -11,10 +11,10 @@ export default function Footer() {
             Ave, New York, NY 10001
           </p>
           <p>
-            <i className="fa fa-phone-alt mr-2"></i>+1 (212) 555-0123
+            <i className="fa fa-phone-alt mr-2"></i>+34 912 345 678
           </p>
           <p>
-            <i className="fa fa-envelope mr-2"></i>hello@idesign.studio
+            <i className="fa fa-envelope mr-2"></i>info@webcode.es
           </p>
           <div className="d-flex justify-content-start mt-4">
             <a

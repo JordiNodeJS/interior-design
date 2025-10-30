@@ -48,7 +48,7 @@ Award-winning luxury interior design studio website built with **Next.js 16**, *
 - 👥 **Team profiles** Sarah Mitchell, James Anderson, Emily Rodriguez, Michael Chen
 - 💬 **Client testimonials** luxury home owners and boutique hotels
 - 📝 **11 Blog articles** timeless design, modern kitchens, sustainability, biophilic design, small spaces, luxury bathrooms, home offices, color psychology, lighting, open floor plans, vintage fusion
-- 📍 **Contact info** 456 Interior Design Ave, NY | hello@idesign.studio | +1 (212) 555-0123
+- 📍 **Contact info** 456 Interior Design Ave, NY | info@webcode.es | +34 912 345 678
 
 ## 📄 Pages
 

@@ -31,10 +31,10 @@ Todo el texto placeholder reemplazado con contenido profesional:
 - **Testimonials**: Jennifer Parker (Luxury Home Owner), David Thompson (Boutique Hotel Owner)
 - **Blog**: "2025 Interior Design Trends", "Maximizing Small Spaces", "Choosing the Perfect Color Palette"
 
-#### Información de Contacto
+-#### Información de Contacto
 - **Dirección**: 456 Interior Design Ave, New York, NY 10001
-- **Email**: hello@idesign.studio
-- **Teléfono**: +1 (212) 555-0123
+- **Email**: info@webcode.es
+- **Teléfono**: +34 912 345 678
 - **Marca**: iDESIGN Interior Studio
 - **Copyright**: © 2025 iDESIGN Interior Studio. Crafted with excellence.
 

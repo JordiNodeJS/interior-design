@@ -112,14 +112,14 @@ export default function ContactPage() {
                   <h1 className="flaticon-email font-weight-normal text-secondary m-0 mr-3"></h1>
                   <div className="d-flex flex-column">
                     <h4>Email Us</h4>
-                    <p className="m-0 text-white">hello@idesign.studio</p>
+                    <p className="m-0 text-white">info@webcode.es</p>
                   </div>
                 </div>
                 <div className="d-inline-flex border border-secondary p-4">
                   <h1 className="flaticon-telephone font-weight-normal text-secondary m-0 mr-3"></h1>
                   <div className="d-flex flex-column">
                     <h4>Call Us</h4>
-                    <p className="m-0 text-white">+1 (212) 555-0123</p>
+                    <p className="m-0 text-white">+34 912 345 678</p>
                   </div>
                 </div>
               </div>
