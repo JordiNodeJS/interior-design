@@ -1,3 +1,8 @@
+"use client";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+
 const teamMembers = [
   {
     id: 1,
@@ -39,10 +44,25 @@ export default function TeamSection() {
             </div>
           </div>
           <div className="col-md-8 col-sm-6 p-0 py-sm-5">
-            <div className="row">
+            <Swiper
+              modules={[Navigation]}
+              navigation
+              spaceBetween={30}
+              slidesPerView={1}
+              loop={true}
+              breakpoints={{
+                768: {
+                  slidesPerView: 2,
+                },
+                992: {
+                  slidesPerView: 3,
+                },
+              }}
+              className="team-carousel position-relative p-0 py-sm-5"
+            >
               {teamMembers.map((member) => (
-                <div key={member.id} className="col-md-6 col-lg-3 mb-4">
-                  <div className="team d-flex flex-column text-center">
+                <SwiperSlide key={member.id}>
+                  <div className="team d-flex flex-column text-center mx-3">
                     <div className="position-relative">
                       <img
                         className="img-fluid w-100"
@@ -78,9 +98,9 @@ export default function TeamSection() {
                       <p className="m-0">{member.role}</p>
                     </div>
                   </div>
-                </div>
+                </SwiperSlide>
               ))}
-            </div>
+            </Swiper>
           </div>
         </div>
       </div>

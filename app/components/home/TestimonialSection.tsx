@@ -1,3 +1,8 @@
+"use client";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+
 const testimonials = [
   {
     id: 1,
@@ -25,9 +30,16 @@ export default function TestimonialSection() {
               Testimonial
             </h6>
             <h1 className="mb-4 section-title">What Our Clients Say</h1>
-            <div className="row">
+            <Swiper
+              modules={[Navigation]}
+              navigation
+              spaceBetween={0}
+              slidesPerView={1}
+              loop={true}
+              className="testimonial-carousel position-relative pb-5 mb-md-5"
+            >
               {testimonials.map((testimonial) => (
-                <div key={testimonial.id} className="col-12 mb-4">
+                <SwiperSlide key={testimonial.id}>
                   <div className="d-flex flex-column">
                     <div className="d-flex align-items-center mb-3">
                       <img
@@ -43,9 +55,9 @@ export default function TestimonialSection() {
                     </div>
                     <p>{testimonial.text}</p>
                   </div>
-                </div>
+                </SwiperSlide>
               ))}
-            </div>
+            </Swiper>
           </div>
           <div className="col-md-5">
             <div className="d-flex flex-column align-items-center justify-content-center h-100 overflow-hidden">

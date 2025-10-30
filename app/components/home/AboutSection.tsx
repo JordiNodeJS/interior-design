@@ -4,7 +4,7 @@ export default function AboutSection() {
       <div className="container">
         <div className="row">
           <div className="col-lg-5">
-            <div className="d-flex flex-column align-items-center justify-content-center bg-secondary h-100 py-5 px-3">
+            <div className="d-flex flex-column align-items-center justify-content-center bg-primary h-100 py-5 px-3">
               <i className="flaticon-brickwall display-1 font-weight-normal text-secondary mb-3"></i>
               <h4 className="display-3 mb-3">25+</h4>
               <h1 className="m-0">Years Experience</h1>

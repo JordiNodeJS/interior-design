@@ -9,6 +9,10 @@
 /* Import Flaticon fonts */
 @use "./styles/flaticon.scss";
 
+/* Import Swiper styles */
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9598,6 +9602,41 @@ h6 {
   opacity: 1;
 }
 
+/* Swiper navigation styles to match owl-carousel */
+.service-carousel.swiper,
+.team-carousel.swiper {
+  position: relative;
+}
+
+.service-carousel .swiper-button-prev,
+.service-carousel .swiper-button-next,
+.team-carousel .swiper-button-prev,
+.team-carousel .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #252531;
+  background: #DFB163;
+  opacity: 0.1;
+  transition: 0.3s;
+}
+
+.service-carousel .swiper-button-prev::after,
+.service-carousel .swiper-button-next::after,
+.team-carousel .swiper-button-prev::after,
+.team-carousel .swiper-button-next::after {
+  font-size: 22px;
+}
+
+.service-carousel:hover .swiper-button-prev,
+.service-carousel:hover .swiper-button-next,
+.team-carousel:hover .swiper-button-prev,
+.team-carousel:hover .swiper-button-next {
+  opacity: 1;
+}
+
 .portfolio-item .portfolio-img {
   position: relative;
   width: 100%;
@@ -9665,6 +9704,47 @@ h6 {
 
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
+  color: #252531;
+  background: #DFB163;
+}
+
+/* Testimonial carousel Swiper styles */
+.testimonial-carousel.swiper {
+  position: relative;
+}
+
+.testimonial-carousel .swiper-button-prev,
+.testimonial-carousel .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #DFB163;
+  background: transparent;
+  border: 1px solid #DFB163;
+  transition: 0.3s;
+  bottom: 0;
+  top: auto;
+}
+
+.testimonial-carousel .swiper-button-prev {
+  left: -5px;
+}
+
+.testimonial-carousel .swiper-button-next {
+  left: 40px;
+  right: auto;
+}
+
+.testimonial-carousel .swiper-button-prev::after,
+.testimonial-carousel .swiper-button-next::after {
+  font-size: 22px;
+}
+
+.testimonial-carousel .swiper-button-prev:hover,
+.testimonial-carousel .swiper-button-next:hover {
   color: #252531;
   background: #DFB163;
 }

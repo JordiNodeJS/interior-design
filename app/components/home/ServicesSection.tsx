@@ -1,3 +1,8 @@
+"use client";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+
 export default function ServicesSection() {
   const services = [
     {
@@ -5,21 +10,21 @@ export default function ServicesSection() {
       icon: "flaticon-bedroom",
       title: "Bedroom Design",
       description:
-        "Create your perfect sanctuary with custom bedroom designs that combine luxury, comfort, and personal style.",
+        "Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos",
     },
     {
       id: 2,
       icon: "flaticon-kitchen",
       title: "Kitchen Design",
       description:
-        "Modern, functional kitchens where culinary excellence meets stunning design and innovative storage solutions.",
+        "Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos",
     },
     {
       id: 3,
       icon: "flaticon-bathroom",
       title: "Bathroom Design",
       description:
-        "Spa-inspired bathrooms featuring premium fixtures, elegant finishes, and meticulous attention to detail.",
+        "Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos",
     },
   ];
 
@@ -32,34 +37,38 @@ export default function ServicesSection() {
               Our Awesome Services
             </h6>
             <h1 className="mb-4 section-title">
-              Comprehensive Design Services Tailored To Your Vision
+              Awesome Interior Designing Services For Your Home
             </h1>
             <p>
-              From concept to completion, our full-service interior design
-              approach ensures every detail reflects your unique lifestyle and
-              aesthetic preferences. We specialize in residential and commercial
-              spaces, offering personalized solutions that maximize
-              functionality while elevating beauty and sophistication in every
-              room.
+              Invidunt lorem justo clita. Erat lorem labore ea, justo dolor
+              lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat
+              justo sed sed diam. Ea et erat ut sed diam sea ipsum
             </p>
             <a href="" className="btn btn-primary mt-3 py-2 px-4">
               View More
             </a>
           </div>
           <div className="col-lg-6 p-0 pt-5 pt-lg-0">
-            <div className="row">
+            <Swiper
+              modules={[Navigation]}
+              navigation
+              spaceBetween={0}
+              slidesPerView={1}
+              loop={true}
+              className="service-carousel position-relative"
+            >
               {services.map((service) => (
-                <div key={service.id} className="col-md-4 mb-4">
-                  <div className="d-flex flex-column text-center bg-light p-4">
+                <SwiperSlide key={service.id}>
+                  <div className="d-flex flex-column text-center bg-light mx-3 p-4">
                     <h3
                       className={`${service.icon} display-3 font-weight-normal text-primary mb-3`}
                     ></h3>
                     <h5 className="mb-3">{service.title}</h5>
                     <p className="m-0">{service.description}</p>
                   </div>
-                </div>
+                </SwiperSlide>
               ))}
-            </div>
+            </Swiper>
           </div>
         </div>
       </div>
