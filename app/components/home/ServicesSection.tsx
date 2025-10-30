@@ -1,11 +1,28 @@
-"use client";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-
 export default function ServicesSection() {
+  const services = [
+    {
+      id: 1,
+      icon: "flaticon-bedroom",
+      title: "Bedroom Design",
+      description:
+        "Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos",
+    },
+    {
+      id: 2,
+      icon: "flaticon-kitchen",
+      title: "Kitchen Design",
+      description:
+        "Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos",
+    },
+    {
+      id: 3,
+      icon: "flaticon-bathroom",
+      title: "Bathroom Design",
+      description:
+        "Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos",
+    },
+  ];
+
   return (
     <div className="container-fluid py-5">
       <div className="container py-5">
@@ -27,44 +44,19 @@ export default function ServicesSection() {
             </a>
           </div>
           <div className="col-lg-6 p-0 pt-5 pt-lg-0">
-            <Swiper
-              modules={[Navigation]}
-              slidesPerView={1}
-              spaceBetween={30}
-              navigation={true}
-              className="service-carousel position-relative"
-            >
-              <SwiperSlide>
-                <div className="d-flex flex-column text-center bg-light mx-3 p-4">
-                  <h3 className="flaticon-bedroom display-3 font-weight-normal text-primary mb-3"></h3>
-                  <h5 className="mb-3">Bedroom Design</h5>
-                  <p className="m-0">
-                    Diam amet eos at no eos sit lorem, amet rebum ipsum clita
-                    stet, diam sea est diam eos
-                  </p>
+            <div className="row">
+              {services.map((service) => (
+                <div key={service.id} className="col-md-4 mb-4">
+                  <div className="d-flex flex-column text-center bg-light p-4">
+                    <h3
+                      className={`${service.icon} display-3 font-weight-normal text-primary mb-3`}
+                    ></h3>
+                    <h5 className="mb-3">{service.title}</h5>
+                    <p className="m-0">{service.description}</p>
+                  </div>
                 </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="d-flex flex-column text-center bg-light mx-3 p-4">
-                  <h3 className="flaticon-kitchen display-3 font-weight-normal text-primary mb-3"></h3>
-                  <h5 className="mb-3">Kitchen Design</h5>
-                  <p className="m-0">
-                    Diam amet eos at no eos sit lorem, amet rebum ipsum clita
-                    stet, diam sea est diam eos
-                  </p>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="d-flex flex-column text-center bg-light mx-3 p-4">
-                  <h3 className="flaticon-bathroom display-3 font-weight-normal text-primary mb-3"></h3>
-                  <h5 className="mb-3">Bathroom Design</h5>
-                  <p className="m-0">
-                    Diam amet eos at no eos sit lorem, amet rebum ipsum clita
-                    stet, diam sea est diam eos
-                  </p>
-                </div>
-              </SwiperSlide>
-            </Swiper>
+              ))}
+            </div>
           </div>
         </div>
       </div>

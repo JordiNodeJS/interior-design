@@ -17,6 +17,7 @@ This is a migration project from an HTML template to a modern Next.js 16 applica
 - Server Components by default
 - Optimal performance (Lighthouse >90)
 - Accessibility compliant (WCAG 2.1 AA)
+- Usa Context7 mcp para estar actualizado con las últimas prácticas de Next.js y React.
 
 ---
 
@@ -788,6 +789,20 @@ External docs:
 - [Next.js 16 Documentation](https://nextjs.org/docs)
 - [React 19 Documentation](https://react.dev)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs)
+
+
+## Notas finales
+
+El servidor de la plantilla "interior-design-template" corre el servidor 🏡 Local:     http://localhost:8080. Si no corriera allí, puedes iniciarlo en otra terminal con:
+
+```bash
+$ pnpm dlx servor
+
+  🗂  Serving:   G:\DEV\tmp\interior-design\interior-design-template
+
+  🏡 Local:     http://localhost:8080
+```
+Para que puedas ver la plantilla original y compararla con la migración a Next.js.
 
 ---
 

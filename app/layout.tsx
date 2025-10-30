@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat, Oswald } from "next/font/google";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.scss";
+import BootstrapClient from "./components/BootstrapClient";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -35,6 +37,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${montserrat.variable} ${oswald.variable}`}>
+        <BootstrapClient />
         {children}
       </body>
     </html>
