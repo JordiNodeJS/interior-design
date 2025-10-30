@@ -4,71 +4,13 @@ import { useState, FormEvent } from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { useParams } from "next/navigation";
+import { getBlogPostBySlug, getAllBlogPosts } from "../../data/blogPosts";
 import Topbar from "../../components/Topbar";
 import Navbar from "../../components/Navbar";
 import UnderNav from "../../components/home/UnderNav";
 import Footer from "../../components/Footer";
 import BackToTop from "../../components/BackToTop";
-
-const relatedPosts = [
-  {
-    id: 1,
-    img: "/img/blog-1.jpg",
-    title: "Minimalist Living Spaces",
-    excerpt:
-      "Learn how to create serene, clutter-free environments that promote well-being and sophisticated aesthetics.",
-    author: "Sarah Mitchell",
-    category: "Interior Design",
-    comments: 18,
-  },
-  {
-    id: 2,
-    img: "/img/blog-2.jpg",
-    title: "Sustainable Design Choices",
-    excerpt:
-      "Explore eco-friendly materials and practices that benefit both your home and the environment.",
-    author: "James Anderson",
-    category: "Sustainability",
-    comments: 24,
-  },
-  {
-    id: 3,
-    img: "/img/blog-3.jpg",
-    title: "Lighting Design Mastery",
-    excerpt:
-      "Master the art of layered lighting to transform any space and enhance mood throughout the day.",
-    author: "Emily Rodriguez",
-    category: "Design Tips",
-    comments: 31,
-  },
-];
-
-const recentPosts = [
-  {
-    id: 1,
-    img: "/img/blog-1.jpg",
-    title: "Modern Kitchen Design Trends for 2025",
-    author: "Sarah Mitchell",
-    category: "Kitchen Design",
-    comments: 22,
-  },
-  {
-    id: 2,
-    img: "/img/blog-2.jpg",
-    title: "Creating Your Perfect Home Office Space",
-    author: "James Anderson",
-    category: "Home Office",
-    comments: 19,
-  },
-  {
-    id: 3,
-    img: "/img/blog-3.jpg",
-    title: "Luxury Bathroom Design Ideas",
-    author: "Emily Rodriguez",
-    category: "Bathroom Design",
-    comments: 27,
-  },
-];
 
 const categories = [
   { name: "Residential Design", count: 145 },
@@ -93,6 +35,19 @@ export default function BlogSinglePage() {
     message: "",
   });
 
+  const params = useParams();
+  const slug = params.slug as string;
+  const currentPost = getBlogPostBySlug(slug);
+  const allPosts = getAllBlogPosts();
+
+  // Get related posts (3 random posts excluding current)
+  const relatedPosts = allPosts
+    .filter((post) => post.slug !== slug)
+    .slice(0, 3);
+
+  // Get recent posts (5 most recent excluding current)
+  const recentPosts = allPosts.filter((post) => post.slug !== slug).slice(0, 5);
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Comment submitted:", formData);
@@ -108,6 +63,26 @@ export default function BlogSinglePage() {
       [e.target.id]: e.target.value,
     });
   };
+
+  if (!currentPost) {
+    return (
+      <>
+        <Topbar />
+        <Navbar />
+        <UnderNav />
+        <div className="container py-5">
+          <div className="text-center">
+            <h1>Blog Post Not Found</h1>
+            <Link href="/blog" className="btn btn-primary mt-3">
+              Back to Blog
+            </Link>
+          </div>
+        </div>
+        <Footer />
+        <BackToTop />
+      </>
+    );
+  }
 
   return (
     <>
@@ -263,12 +238,15 @@ export default function BlogSinglePage() {
                 className="service-carousel position-relative"
               >
                 {relatedPosts.map((post) => (
-                  <SwiperSlide key={post.id}>
+                  <SwiperSlide key={post.slug}>
                     <div className="card border-0 mx-3">
-                      <img className="card-img-top" src={post.img} alt="" />
+                      <img className="card-img-top" src={post.image} alt="" />
                       <div className="card-body bg-light p-4">
                         <div className="d-flex align-items-center mb-3">
-                          <Link className="btn btn-primary" href="/blog">
+                          <Link
+                            className="btn btn-primary"
+                            href={`/blog/${post.slug}`}
+                          >
                             <i className="fa fa-link"></i>
                           </Link>
                           <h5 className="m-0 ml-3 text-truncate">
@@ -488,17 +466,20 @@ export default function BlogSinglePage() {
               <h3 className="mb-4 section-title">Recent Posts</h3>
               {recentPosts.map((post) => (
                 <div
-                  key={post.id}
+                  key={post.slug}
                   className="d-flex align-items-center border-bottom mb-3 pb-3"
                 >
                   <img
                     className="img-fluid"
-                    src={post.img}
+                    src={post.image}
                     style={{ width: "80px", height: "80px" }}
                     alt=""
                   />
                   <div className="d-flex flex-column pl-3">
-                    <Link className="text-dark mb-2" href="/blog">
+                    <Link
+                      className="text-dark mb-2"
+                      href={`/blog/${post.slug}`}
+                    >
                       {post.title}
                     </Link>
                     <div className="d-flex">

@@ -1,28 +1,8 @@
-const blogPosts = [
-  {
-    id: 1,
-    img: "/img/blog-1.jpg",
-    title: "2025 Interior Design Trends",
-    excerpt:
-      "Discover the hottest interior design trends shaping luxury homes this year, from sustainable materials to biophilic design elements and smart home integration.",
-  },
-  {
-    id: 2,
-    img: "/img/blog-2.jpg",
-    title: "Maximizing Small Spaces",
-    excerpt:
-      "Expert tips on transforming compact living areas into functional, stylish spaces through clever storage solutions, multi-purpose furniture, and strategic design.",
-  },
-  {
-    id: 3,
-    img: "/img/blog-3.jpg",
-    title: "Choosing the Perfect Color Palette",
-    excerpt:
-      "A comprehensive guide to selecting harmonious color schemes that reflect your personality while enhancing natural light and creating the perfect ambiance.",
-  },
-];
+import Link from "next/link";
+import { getAllBlogPosts } from "../../data/blogPosts";
 
 export default function BlogSection() {
+  const blogPosts = getAllBlogPosts().slice(0, 9); // Show first 9 posts
   return (
     <div className="container-fluid bg-light pt-5">
       <div className="container py-5">
@@ -38,27 +18,31 @@ export default function BlogSection() {
         </div>
         <div className="row pb-3">
           {blogPosts.map((post) => (
-            <div key={post.id} className="col-md-4 mb-4">
+            <div key={post.slug} className="col-md-4 mb-4">
               <div className="card border-0 mb-2">
-                <img className="card-img-top" src={post.img} alt="" />
+                <img className="card-img-top" src={post.image} alt="" />
                 <div className="card-body bg-white p-4">
                   <div className="d-flex align-items-center mb-3">
-                    <a className="btn btn-primary" href="">
+                    <Link
+                      className="btn btn-primary"
+                      href={`/blog/${post.slug}`}
+                    >
                       <i className="fa fa-link"></i>
-                    </a>
+                    </Link>
                     <h5 className="m-0 ml-3 text-truncate">{post.title}</h5>
                   </div>
                   <p>{post.excerpt}</p>
                   <div className="d-flex">
                     <small className="mr-3">
-                      <i className="fa fa-user text-primary"></i> Sarah Mitchell
+                      <i className="fa fa-user text-primary"></i> {post.author}
                     </small>
                     <small className="mr-3">
-                      <i className="fa fa-folder text-primary"></i> Interior
-                      Design
+                      <i className="fa fa-folder text-primary"></i>{" "}
+                      {post.category}
                     </small>
                     <small className="mr-3">
-                      <i className="fa fa-comments text-primary"></i> 24
+                      <i className="fa fa-comments text-primary"></i>{" "}
+                      {post.comments}
                     </small>
                   </div>
                 </div>
