@@ -2,23 +2,23 @@ const blogPosts = [
   {
     id: 1,
     img: "/img/blog-1.jpg",
-    title: "Diam amet eos at no eos",
+    title: "2025 Interior Design Trends",
     excerpt:
-      "Diam amet eos at no eos sit, amet rebum ipsum clita stet, diam sea est diam eos, sit vero stet justo",
+      "Discover the hottest interior design trends shaping luxury homes this year, from sustainable materials to biophilic design elements and smart home integration.",
   },
   {
     id: 2,
     img: "/img/blog-2.jpg",
-    title: "Diam amet eos at no eos",
+    title: "Maximizing Small Spaces",
     excerpt:
-      "Diam amet eos at no eos sit, amet rebum ipsum clita stet, diam sea est diam eos, sit vero stet justo",
+      "Expert tips on transforming compact living areas into functional, stylish spaces through clever storage solutions, multi-purpose furniture, and strategic design.",
   },
   {
     id: 3,
     img: "/img/blog-3.jpg",
-    title: "Diam amet eos at no eos",
+    title: "Choosing the Perfect Color Palette",
     excerpt:
-      "Diam amet eos at no eos sit, amet rebum ipsum clita stet, diam sea est diam eos, sit vero stet justo",
+      "A comprehensive guide to selecting harmonious color schemes that reflect your personality while enhancing natural light and creating the perfect ambiance.",
   },
 ];
 
@@ -51,13 +51,14 @@ export default function BlogSection() {
                   <p>{post.excerpt}</p>
                   <div className="d-flex">
                     <small className="mr-3">
-                      <i className="fa fa-user text-primary"></i> Admin
+                      <i className="fa fa-user text-primary"></i> Sarah Mitchell
                     </small>
                     <small className="mr-3">
-                      <i className="fa fa-folder text-primary"></i> Web Design
+                      <i className="fa fa-folder text-primary"></i> Interior
+                      Design
                     </small>
                     <small className="mr-3">
-                      <i className="fa fa-comments text-primary"></i> 15
+                      <i className="fa fa-comments text-primary"></i> 24
                     </small>
                   </div>
                 </div>

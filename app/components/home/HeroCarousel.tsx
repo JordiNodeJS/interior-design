@@ -10,16 +10,16 @@ export default function HeroCarousel() {
             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
               <div className="p-3" style={{ maxWidth: "800px" }}>
                 <h4 className="text-primary text-uppercase font-weight-normal mb-md-3">
-                  Creative Interior Design
+                  Award-Winning Interior Design
                 </h4>
                 <h3 className="display-3 text-white mb-md-4">
-                  Make Your Home Better
+                  Transform Your Space Into Art
                 </h3>
                 <a
                   href=""
                   className="btn btn-primary py-md-3 px-md-5 mt-2 mt-md-4"
                 >
-                  Learn More
+                  Explore Our Work
                 </a>
               </div>
             </div>
@@ -29,16 +29,16 @@ export default function HeroCarousel() {
             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
               <div className="p-3" style={{ maxWidth: "800px" }}>
                 <h4 className="text-primary text-uppercase font-weight-normal mb-md-3">
-                  Creative Interior Design
+                  Luxury Residential Design
                 </h4>
                 <h3 className="display-3 text-white mb-md-4">
-                  Stay At Home In Peace
+                  Where Elegance Meets Comfort
                 </h3>
                 <a
                   href=""
                   className="btn btn-primary py-md-3 px-md-5 mt-2 mt-md-4"
                 >
-                  Learn More
+                  Get Started Today
                 </a>
               </div>
             </div>

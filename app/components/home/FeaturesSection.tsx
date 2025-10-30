@@ -8,13 +8,16 @@ export default function FeaturesSection() {
               Why Choose Us?
             </h6>
             <h1 className="mb-4 section-title">
-              25+ Years Experience In The Interior Design Industry
+              Industry-Leading Expertise & Award-Winning Design Excellence
             </h1>
             <p className="mb-4">
-              Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore
-              sed et. Sit rebum labore sit sit ut vero no sit. And elitr stet
-              dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed
-              diam duo
+              Our distinguished portfolio spans luxury residences, boutique
+              hotels, and prestigious commercial spaces. With a team of
+              internationally recognized designers and architects, we deliver
+              innovative solutions that exceed expectations. Every project
+              benefits from our meticulous process, premium partnerships with
+              leading brands, and unwavering commitment to transforming your
+              vision into reality.
             </p>
             <ul className="list-inline">
               <li>
@@ -25,14 +28,14 @@ export default function FeaturesSection() {
               </li>
               <li>
                 <h5>
-                  <i className="far fa-check-square text-primary mr-3"></i>Best
-                  Interior Design
+                  <i className="far fa-check-square text-primary mr-3"></i>
+                  Award-Winning Designs
                 </h5>
               </li>
               <li>
                 <h5>
                   <i className="far fa-check-square text-primary mr-3"></i>
-                  Customer Satisfaction
+                  100% Client Satisfaction
                 </h5>
               </li>
             </ul>

@@ -5,21 +5,21 @@ export default function ServicesSection() {
       icon: "flaticon-bedroom",
       title: "Bedroom Design",
       description:
-        "Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos",
+        "Create your perfect sanctuary with custom bedroom designs that combine luxury, comfort, and personal style.",
     },
     {
       id: 2,
       icon: "flaticon-kitchen",
       title: "Kitchen Design",
       description:
-        "Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos",
+        "Modern, functional kitchens where culinary excellence meets stunning design and innovative storage solutions.",
     },
     {
       id: 3,
       icon: "flaticon-bathroom",
       title: "Bathroom Design",
       description:
-        "Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos",
+        "Spa-inspired bathrooms featuring premium fixtures, elegant finishes, and meticulous attention to detail.",
     },
   ];
 
@@ -32,12 +32,15 @@ export default function ServicesSection() {
               Our Awesome Services
             </h6>
             <h1 className="mb-4 section-title">
-              Awesome Interior Designing Services For Your Home
+              Comprehensive Design Services Tailored To Your Vision
             </h1>
             <p>
-              Invidunt lorem justo clita. Erat lorem labore ea, justo dolor
-              lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat
-              justo sed sed diam. Ea et erat ut sed diam sea ipsum
+              From concept to completion, our full-service interior design
+              approach ensures every detail reflects your unique lifestyle and
+              aesthetic preferences. We specialize in residential and commercial
+              spaces, offering personalized solutions that maximize
+              functionality while elevating beauty and sophistication in every
+              room.
             </p>
             <a href="" className="btn btn-primary mt-3 py-2 px-4">
               View More

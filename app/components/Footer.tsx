@@ -7,14 +7,14 @@ export default function Footer() {
         <div className="col-lg-3 col-md-6 mb-5">
           <h4 className="text-primary mb-4">Get In Touch</h4>
           <p>
-            <i className="fa fa-map-marker-alt mr-2"></i>123 Street, New York,
-            USA
+            <i className="fa fa-map-marker-alt mr-2"></i>456 Interior Design
+            Ave, New York, NY 10001
           </p>
           <p>
-            <i className="fa fa-phone-alt mr-2"></i>+012 345 67890
+            <i className="fa fa-phone-alt mr-2"></i>+1 (212) 555-0123
           </p>
           <p>
-            <i className="fa fa-envelope mr-2"></i>info@example.com
+            <i className="fa fa-envelope mr-2"></i>hello@idesign.studio
           </p>
           <div className="d-flex justify-content-start mt-4">
             <a
@@ -119,17 +119,11 @@ export default function Footer() {
       </div>
       <div className="container border-top border-secondary pt-5">
         <p className="m-0 text-center text-white">
-          &copy;{" "}
+          &copy; {new Date().getFullYear()}{" "}
           <a className="text-white font-weight-bold" href="#">
-            Your Site Name
+            iDESIGN Interior Studio
           </a>
-          . All Rights Reserved. Designed by{" "}
-          <a
-            className="text-white font-weight-bold"
-            href="https://htmlcodex.com"
-          >
-            HTML Codex
-          </a>
+          . All Rights Reserved. Crafted with excellence.
         </p>
       </div>
     </div>

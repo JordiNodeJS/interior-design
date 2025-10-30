@@ -1,17 +1,17 @@
 const testimonials = [
   {
     id: 1,
-    name: "Client Name",
-    profession: "Profession",
+    name: "Jennifer Parker",
+    profession: "Luxury Home Owner",
     img: "/img/testimonial-1.jpg",
-    text: "Tempor at diam tempor sed. Sanctus dolor ipsum ut nonumy amet clita sea. Sed eos sed dolores vero no. Ipsum elitr elitr stet dolor lorem erat. Diam no amet sea justo vero ut. Dolor ipsum kasd ipsum dolore.",
+    text: "Working with iDESIGN transformed our penthouse beyond imagination. Sarah and her team captured our vision perfectly, blending modern elegance with timeless sophistication. The attention to detail, from custom millwork to curated furnishings, exceeded all expectations. Our home is now a true reflection of our lifestyle.",
   },
   {
     id: 2,
-    name: "Client Name",
-    profession: "Profession",
+    name: "David Thompson",
+    profession: "Boutique Hotel Owner",
     img: "/img/testimonial-2.jpg",
-    text: "Tempor at diam tempor sed. Sanctus dolor ipsum ut nonumy amet clita sea. Sed eos sed dolores vero no. Ipsum elitr elitr stet dolor lorem erat. Diam no amet sea justo vero ut. Dolor ipsum kasd ipsum dolore.",
+    text: "The iDESIGN team delivered a stunning redesign for our boutique hotel that has dramatically increased guest satisfaction and bookings. Their ability to balance aesthetic beauty with functional requirements is unmatched. From concept to completion, the process was seamless and professional.",
   },
 ];
 

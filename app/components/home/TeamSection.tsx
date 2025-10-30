@@ -2,26 +2,26 @@ const teamMembers = [
   {
     id: 1,
     img: "/img/team-1.jpg",
-    name: "Name Goes Here",
-    role: "Designation",
+    name: "Sarah Mitchell",
+    role: "Creative Director",
   },
   {
     id: 2,
     img: "/img/team-2.jpg",
-    name: "Name Goes Here",
-    role: "Designation",
+    name: "James Anderson",
+    role: "Senior Designer",
   },
   {
     id: 3,
     img: "/img/team-3.jpg",
-    name: "Name Goes Here",
-    role: "Designation",
+    name: "Emily Rodriguez",
+    role: "Project Manager",
   },
   {
     id: 4,
     img: "/img/team-4.jpg",
-    name: "Name Goes Here",
-    role: "Designation",
+    name: "Michael Chen",
+    role: "Lead Architect",
   },
 ];
 

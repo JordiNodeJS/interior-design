@@ -15,13 +15,16 @@ export default function AboutSection() {
               Learn About Us
             </h6>
             <h1 className="mb-4 section-title">
-              We Are The Best Interior Designing Firm In Your City
+              We Transform Spaces Into Extraordinary Living Experiences
             </h1>
             <p>
-              Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo
-              dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo.
-              Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
-              dolor
+              With over 25 years of expertise in luxury interior design, iDESIGN
+              has become the premier choice for discerning clients seeking
+              sophisticated, timeless spaces. Our philosophy blends contemporary
+              aesthetics with functional elegance, creating interiors that not
+              only captivate the eye but enhance daily living. Every project we
+              undertake reflects our commitment to exceptional craftsmanship,
+              attention to detail, and personalized service.
             </p>
             <div className="row py-2">
               <div className="col-sm-6">

@@ -17,6 +17,7 @@
     "next": "16.0.1",
     "react": "19.2.0",
     "react-dom": "19.2.0",
+    "resend": "^6.3.0",
     "sass": "^1.93.2",
     "swiper": "^12.0.3",
     "yet-another-react-lightbox": "^3.25.0"

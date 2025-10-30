@@ -23,14 +23,35 @@ export default function ContactPage() {
     setIsSubmitting(true);
     setSubmitMessage("");
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || "Failed to send message");
+      }
+
       setSubmitMessage(
-        "Thank you for contacting us! We'll get back to you soon."
+        result.message ||
+          "Thank you for contacting us! We'll get back to you soon."
       );
-      setIsSubmitting(false);
       setFormData({ name: "", email: "", subject: "", message: "" });
-    }, 1000);
+    } catch (error) {
+      setSubmitMessage(
+        error instanceof Error
+          ? `Error: ${error.message}`
+          : "An unexpected error occurred. Please try again."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -82,21 +103,23 @@ export default function ContactPage() {
                   <h1 className="flaticon-office font-weight-normal text-secondary m-0 mr-3"></h1>
                   <div className="d-flex flex-column">
                     <h4>Our Office</h4>
-                    <p className="m-0 text-white">123 Street, New York, USA</p>
+                    <p className="m-0 text-white">
+                      456 Interior Design Ave, New York, NY 10001
+                    </p>
                   </div>
                 </div>
                 <div className="d-inline-flex border border-secondary p-4 mb-4">
                   <h1 className="flaticon-email font-weight-normal text-secondary m-0 mr-3"></h1>
                   <div className="d-flex flex-column">
                     <h4>Email Us</h4>
-                    <p className="m-0 text-white">info@example.com</p>
+                    <p className="m-0 text-white">hello@idesign.studio</p>
                   </div>
                 </div>
                 <div className="d-inline-flex border border-secondary p-4">
                   <h1 className="flaticon-telephone font-weight-normal text-secondary m-0 mr-3"></h1>
                   <div className="d-flex flex-column">
                     <h4>Call Us</h4>
-                    <p className="m-0 text-white">+012 345 6789</p>
+                    <p className="m-0 text-white">+1 (212) 555-0123</p>
                   </div>
                 </div>
               </div>

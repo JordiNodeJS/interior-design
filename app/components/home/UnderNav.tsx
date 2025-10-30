@@ -8,7 +8,7 @@ export default function UnderNav() {
               <h1 className="flaticon-office font-weight-normal text-primary m-0 mr-3"></h1>
               <div className="d-flex flex-column">
                 <h5>Our Office</h5>
-                <p className="m-0">123 Street, New York, USA</p>
+                <p className="m-0">456 Interior Design Ave, NY 10001</p>
               </div>
             </div>
           </div>
@@ -17,7 +17,7 @@ export default function UnderNav() {
               <h1 className="flaticon-email font-weight-normal text-primary m-0 mr-3"></h1>
               <div className="d-flex flex-column">
                 <h5>Email Us</h5>
-                <p className="m-0">info@example.com</p>
+                <p className="m-0">hello@idesign.studio</p>
               </div>
             </div>
           </div>
@@ -26,7 +26,7 @@ export default function UnderNav() {
               <h1 className="flaticon-telephone font-weight-normal text-primary m-0 mr-3"></h1>
               <div className="d-flex flex-column">
                 <h5>Call Us</h5>
-                <p className="m-0">+012 345 6789</p>
+                <p className="m-0">+1 (212) 555-0123</p>
               </div>
             </div>
           </div>
