@@ -25,7 +25,12 @@ export default function TestimonialSection() {
     <div className="container-fluid">
       <div className="container">
         <div className="row">
-          <div className="col-md-7 py-5 pr-md-5">
+          <div className="col-md-5">
+            <div className="d-flex flex-column align-items-center justify-content-center h-100 overflow-hidden">
+              <img className="h-100" src="/img/testimonial.jpg" alt="" />
+            </div>
+          </div>
+          <div className="col-md-7 py-5 pl-md-5">
             <h6 className="text-primary font-weight-normal text-uppercase mb-3 pt-5">
               Testimonial
             </h6>
@@ -58,11 +63,6 @@ export default function TestimonialSection() {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </div>
-          <div className="col-md-5">
-            <div className="d-flex flex-column align-items-center justify-content-center h-100 overflow-hidden">
-              <img className="h-100" src="/img/testimonial.jpg" alt="" />
-            </div>
           </div>
         </div>
       </div>

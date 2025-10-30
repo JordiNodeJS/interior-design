@@ -4,6 +4,8 @@ import Topbar from "../components/Topbar";
 import Navbar from "../components/Navbar";
 import UnderNav from "../components/home/UnderNav";
 import ServicesSection from "../components/home/ServicesSection";
+import FeaturesSection from "../components/home/FeaturesSection";
+import TestimonialSection from "../components/home/TestimonialSection";
 import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
 
@@ -44,6 +46,8 @@ export default function ServicePage() {
       </div>
 
       <ServicesSection />
+      <FeaturesSection />
+      <TestimonialSection />
       <Footer />
       <BackToTop />
     </>
