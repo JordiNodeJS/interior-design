@@ -785,6 +785,9 @@ Internal docs in `/docs`:
 - `04-COMPONENTES.md` - Component architecture
 - `05-TESTING-VISUAL.md` - Testing guidelines
 
+Prompts en `/.github/prompts`:
+- `dev.prompt.md` - Inspecciona la web con Chrome DevTools en el navegador para validar el diseño, responsividad y funcionalidad. Usa Next DevTools para detectar y resolver errores específicos de Next.js 16.
+
 External docs:
 - [Next.js 16 Documentation](https://nextjs.org/docs)
 - [React 19 Documentation](https://react.dev)

@@ -24,7 +24,7 @@ $enable-responsive-font-sizes: true;
 
 $enable-rounded: false;
 
-@import "./styles/flaticon.scss";
+@use "./styles/flaticon.scss";
 
 
 /********** Custom CSS ************/
@@ -256,4 +256,43 @@ h6 {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+/* Override Bootstrap colors with custom theme colors */
+.bg-primary {
+    background-color: #DFB163 !important;
+}
+
+.bg-secondary {
+    background-color: #EDBB5F !important;
+}
+
+.text-primary {
+    color: #DFB163 !important;
+}
+
+.text-secondary {
+    color: #252531 !important;
+}
+
+.btn-primary {
+    background-color: #DFB163 !important;
+    border-color: #DFB163 !important;
+    color: #FFFFFF !important;
+}
+
+.btn-primary:hover {
+    background-color: #c89a4f !important;
+    border-color: #c89a4f !important;
+}
+
+.btn-secondary {
+    background-color: #252531 !important;
+    border-color: #252531 !important;
+    color: #FFFFFF !important;
+}
+
+.btn-secondary:hover {
+    background-color: #3a3a4a !important;
+    border-color: #3a3a4a !important;
 }
