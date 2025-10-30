@@ -51,12 +51,21 @@ export default function ServicesSection() {
           <div className="col-lg-6 p-0 pt-5 pt-lg-0">
             <Swiper
               modules={[Navigation]}
-              navigation
+              navigation={{
+                prevEl: ".service-carousel .swiper-button-prev",
+                nextEl: ".service-carousel .swiper-button-next",
+              }}
               spaceBetween={0}
               slidesPerView={1}
               loop={true}
               className="service-carousel position-relative"
             >
+              <div className="swiper-button-prev">
+                <i className="fa fa-angle-left" aria-hidden="true"></i>
+              </div>
+              <div className="swiper-button-next">
+                <i className="fa fa-angle-right" aria-hidden="true"></i>
+              </div>
               {services.map((service) => (
                 <SwiperSlide key={service.id}>
                   <div className="d-flex flex-column text-center bg-light mx-3 p-4">

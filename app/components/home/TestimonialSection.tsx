@@ -37,12 +37,21 @@ export default function TestimonialSection() {
             <h1 className="mb-4 section-title">What Our Clients Say</h1>
             <Swiper
               modules={[Navigation]}
-              navigation
+              navigation={{
+                prevEl: ".testimonial-carousel .swiper-button-prev",
+                nextEl: ".testimonial-carousel .swiper-button-next",
+              }}
               spaceBetween={0}
               slidesPerView={1}
               loop={true}
               className="testimonial-carousel position-relative pb-5 mb-md-5"
             >
+              <div className="swiper-button-prev">
+                <i className="fa fa-angle-left" aria-hidden="true"></i>
+              </div>
+              <div className="swiper-button-next">
+                <i className="fa fa-angle-right" aria-hidden="true"></i>
+              </div>
               {testimonials.map((testimonial) => (
                 <SwiperSlide key={testimonial.id}>
                   <div className="d-flex flex-column">

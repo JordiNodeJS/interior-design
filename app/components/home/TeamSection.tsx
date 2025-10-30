@@ -46,7 +46,10 @@ export default function TeamSection() {
           <div className="col-md-8 col-sm-6 p-0 py-sm-5">
             <Swiper
               modules={[Navigation]}
-              navigation
+              navigation={{
+                prevEl: ".team-carousel .swiper-button-prev",
+                nextEl: ".team-carousel .swiper-button-next",
+              }}
               spaceBetween={30}
               slidesPerView={1}
               loop={true}
@@ -60,6 +63,12 @@ export default function TeamSection() {
               }}
               className="team-carousel position-relative p-0 py-sm-5"
             >
+              <div className="swiper-button-prev">
+                <i className="fa fa-angle-left" aria-hidden="true"></i>
+              </div>
+              <div className="swiper-button-next">
+                <i className="fa fa-angle-right" aria-hidden="true"></i>
+              </div>
               {teamMembers.map((member) => (
                 <SwiperSlide key={member.id}>
                   <div className="team d-flex flex-column text-center mx-3">

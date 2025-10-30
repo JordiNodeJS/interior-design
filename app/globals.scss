@@ -9623,11 +9623,21 @@ h6 {
   transition: 0.3s;
 }
 
+/* Hide default Swiper arrow icons */
 .service-carousel .swiper-button-prev::after,
 .service-carousel .swiper-button-next::after,
 .team-carousel .swiper-button-prev::after,
 .team-carousel .swiper-button-next::after {
+  content: none; /* Remove default Swiper arrows */
+}
+
+/* Style Font Awesome icons inside navigation buttons */
+.service-carousel .swiper-button-prev i,
+.service-carousel .swiper-button-next i,
+.team-carousel .swiper-button-prev i,
+.team-carousel .swiper-button-next i {
   font-size: 22px;
+  color: #252531;
 }
 
 .service-carousel:hover .swiper-button-prev,
@@ -9738,15 +9748,29 @@ h6 {
   right: auto;
 }
 
+/* Hide default Swiper arrow icons */
 .testimonial-carousel .swiper-button-prev::after,
 .testimonial-carousel .swiper-button-next::after {
+  content: none; /* Remove default Swiper arrows */
+}
+
+/* Style Font Awesome icons inside navigation buttons */
+.testimonial-carousel .swiper-button-prev i,
+.testimonial-carousel .swiper-button-next i {
   font-size: 22px;
+  color: #DFB163;
 }
 
 .testimonial-carousel .swiper-button-prev:hover,
 .testimonial-carousel .swiper-button-next:hover {
   color: #252531;
   background: #DFB163;
+}
+
+/* Change icon color on hover */
+.testimonial-carousel .swiper-button-prev:hover i,
+.testimonial-carousel .swiper-button-next:hover i {
+  color: #252531;
 }
 
 .contact-form .help-block ul {
