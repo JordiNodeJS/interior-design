@@ -20,6 +20,31 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Using pnpm (recommended)
+
+This project standardizes on pnpm for package management. Please prefer `pnpm` for installs and `pnpm dlx` for running one-off CLIs—this keeps installs fast, deterministic, and disk-efficient across contributors.
+
+Quick commands:
+
+```bash
+# Install dependencies (honors pnpm-lock.yaml)
+pnpm install
+
+# Run development server
+pnpm dev
+
+# Add a dependency
+pnpm add <package>
+
+# Add a dev dependency
+pnpm add -D <package>
+
+# Run a one-off CLI without installing globally (example)
+pnpm dlx create-next-app@latest my-app
+```
+
+Do not mix package managers in the same repository (avoid running `npm` or `yarn` commands here). Follow the project's lockfile (`pnpm-lock.yaml`).
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
