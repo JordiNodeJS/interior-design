@@ -9783,6 +9783,13 @@ a.text-white:hover {
 .dropdown-item:focus {
   color: #252531;
   background-color: #DFB163;
+  text-decoration: none;
+}
+
+/* Button links should never have underline */
+.btn:hover,
+a.btn:hover {
+  text-decoration: none;
 }
 
 /* Card hover effects */
