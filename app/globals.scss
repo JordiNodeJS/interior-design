@@ -9674,3 +9674,92 @@ h6 {
   padding: 0;
   list-style-type: none;
 }
+
+/* Additional hover and style fixes */
+a.text-white:hover {
+  color: var(--primary) !important;
+  text-decoration: none;
+}
+
+.bg-dark a.text-white:hover {
+  color: var(--primary) !important;
+  text-decoration: none;
+}
+
+/* Footer link styles */
+.footer a {
+  color: #777777;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* Dropdown menu styles */
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #252531;
+  background-color: #DFB163;
+}
+
+/* Card hover effects */
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+/* Button hover transitions */
+.btn {
+  transition: 0.3s;
+}
+
+/* Ensure links in navbar don't have underline on hover */
+.navbar-nav .nav-link:hover {
+  text-decoration: none;
+}
+
+/* Blog card hover effects */
+.blog-item:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+/* Card hover effects for blog posts */
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+/* Service item hover effects */
+.service-item:hover {
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+
+/* Portfolio filter buttons */
+#portfolio-flters li {
+  cursor: pointer;
+}
+
+#portfolio-flters li.active {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--secondary);
+}
+
+/* Team member social icons hover */
+.team-social .btn-outline-primary:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--secondary);
+}
+
+/* Footer social icons hover */
+.btn-outline-light:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--secondary);
+}
